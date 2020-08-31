@@ -8,5 +8,25 @@ namespace Sweepstakes
 {
     class Sweepstakes
     {
+        Dictionary<string, string>
+        public Sweepstakes(string name)
+        {
+
+        }
+
+        public void RegisterContestant(Contestant contestant)
+        {
+
+        }
+
+        public Contestant PickWinner()
+        {
+            return null;
+        }
+
+        public void PrintContestantInfo(Contestant contestant)
+        {
+
+        }
     }
 }
