@@ -8,6 +8,7 @@ namespace Sweepstakes
 {
     class Sweepstakes
     {
+        Random rand = new Random();
         Dictionary<int, Contestant> contestants = new Dictionary<int, Contestant>();
         public Sweepstakes(string name)
         {
@@ -22,12 +23,15 @@ namespace Sweepstakes
 
         public Contestant PickWinner()
         {
-            return null;
+            
+            return contestants[rand.Next()];
         }
 
         public void PrintContestantInfo(Contestant contestant)
         {
-
+            Console.WriteLine($"Name: {contestant.firstName} {contestant.lastName}) \n" +
+                $"Email: {contestant.eMail}\n" +
+                $"Registration Number: {contestant.registrationNumber}");
         }
     }
 }
