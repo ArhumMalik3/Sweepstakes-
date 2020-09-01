@@ -8,7 +8,7 @@ namespace Sweepstakes
 {
     class Sweepstakes
     {
-        Dictionary<string, string>
+        Dictionary<int, Contestant> contestants = new Dictionary<int, Contestant>();
         public Sweepstakes(string name)
         {
 
@@ -16,7 +16,8 @@ namespace Sweepstakes
 
         public void RegisterContestant(Contestant contestant)
         {
-
+            int dictionaryCount = contestants.Count + 1;
+            contestants.Add(dictionaryCount, contestant); 
         }
 
         public Contestant PickWinner()

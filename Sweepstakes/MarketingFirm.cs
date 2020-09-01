@@ -8,5 +8,16 @@ namespace Sweepstakes
 {
     class MarketingFirm
     {
+        private ISweepstakesManager _manager;
+
+        public MarketingFirm(ISweepstakesManager manager)
+        {
+
+        }
+
+        public void CreateSweepstakes()
+        {
+
+        }
     }
 }
