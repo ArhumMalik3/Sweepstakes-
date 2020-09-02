@@ -32,8 +32,16 @@ namespace Sweepstakes
         public static int GetRegistrationNumber()
         {
             Console.WriteLine("What is you registration number?: ");
-            int userRegistrationNumber = Console.ReadLine();
+            int userRegistrationNumber = Int32.Parse(Console.ReadLine());
             return userRegistrationNumber;
+        }
+
+        public static string ChooseCollection()
+        {
+            Console.WriteLine("Would you like to use the Stack or the Queue collection? \n" +
+                "Type S for slack or Type Q for queue: ");
+            string collectionChoice = Console.ReadLine();
+            return collectionChoice;
         }
     }
 }

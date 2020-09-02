@@ -8,6 +8,8 @@ namespace Sweepstakes
 {
     class SweepstakesQueueManager : ISweepstakesManager
     {
+        //This is an example of dependency Injection because I can now pass in ISweepstakesManager in somewhere 
+        //and it can now access things that inherit from it 
         Queue<Sweepstakes> queue = new Queue<Sweepstakes>();
         public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
@@ -16,7 +18,7 @@ namespace Sweepstakes
 
         public Sweepstakes GetSweepstakes()
         {
-            return null;
+            return queue.Dequeue();
         }
     }
 }

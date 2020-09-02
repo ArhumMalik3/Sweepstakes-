@@ -8,6 +8,8 @@ namespace Sweepstakes
 {
     class SweepstakesStackManager : ISweepstakesManager
     {
+        //This is an example of dependency Injection because I can now pass in ISweepstakesManager in somewhere 
+        //and it can now access things that inherit from it 
         Stack<Sweepstakes> stack = new Stack<Sweepstakes>();
         public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
@@ -16,7 +18,7 @@ namespace Sweepstakes
 
         public Sweepstakes GetSweepstakes()
         {
-            return null;
+            return stack.Pop();
         }
     }
 }

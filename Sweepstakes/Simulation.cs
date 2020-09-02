@@ -13,8 +13,8 @@ namespace Sweepstakes
 
         public Simulation()
         {
-            sweepstakes = new Sweepstakes("car");
-            Stack
+            
+            
         }
         
         public void CreateMarketingFirmWithManager()
@@ -22,7 +22,7 @@ namespace Sweepstakes
 
         }
 
-        public void Testing()
+        public void GetUserInfoAndRegister()
         {
             string firstName = Userinterface.GetFirstName();
             string lastName = Userinterface.GetLastName();
